@@ -97,7 +97,7 @@ html {
 .main-left .my-pict {
   border-radius: 50%;
   width: 250px;
-  height: auto;
+  height: 250px;
   margin-top: 10em;
 }
 
@@ -442,12 +442,6 @@ html {
   }
 }
 
-@media (max-height: 1400px) {
-  .scroll {
-    margin-bottom: 3em;
-  }
-}
-
 @media (max-height: 775px) {
   body {
     font-size: 14px;
@@ -460,7 +454,13 @@ html {
   }
 }
 
-@media (max-height: 675px) {
+@media (max-height: 850px) {
+  body {
+    font-size: 13.5px;
+  }
+}
+
+@media (max-height: 700px) {
   body {
     font-size: 12.5px;
   }
@@ -475,9 +475,13 @@ html {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   body {
     font-size: 11px;
+  }
+  .main-left .my-pict {
+    height: 200px;
+    width: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
