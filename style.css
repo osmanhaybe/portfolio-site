@@ -363,6 +363,7 @@ html {
   max-height: 100vh;
   font-family: 'Roboto' sans-serif;
   overflow-y: auto;
+  margin-top: 3em;
 }
 
 .modal.active {
