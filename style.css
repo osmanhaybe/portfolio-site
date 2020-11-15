@@ -635,12 +635,6 @@ html {
   }
 }
 
-@media (max-width: 650px) {
-  .modal {
-    margin-top: 4em;
-  }
-}
-
 @media (max-height: 775px) {
   body {
     font-size: 14px;
@@ -665,6 +659,15 @@ html {
   }
   .scroll {
     display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .modal {
+    margin-top: 4em;
+  }
+  .modal-body .final-p {
+    margin-bottom: 3em;
   }
 }
 
