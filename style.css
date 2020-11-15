@@ -337,10 +337,177 @@ html {
 
 .section .project-wrap .project-comp .description h2 {
   padding-bottom: 1em;
+  pointer-events: none;
 }
 
 .section .project-wrap .project-comp:hover .description {
   opacity: 1;
+}
+
+/* Donations Modal popup */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  border: none;
+  border-radius: 10px;
+  z-index: 1000;
+  background-color: #f4f4f4;
+  padding: 3em;
+  width: 500px;
+  max-width: 80%;
+  max-height: 100vh;
+  font-family: 'Roboto' sans-serif;
+  overflow-y: auto;
+}
+
+.modal.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.modal-header .title {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0.5em;
+  border-bottom: none;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #000;
+  background: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  position: absolute;
+  top: -1.2em;
+  right: -1.2em;
+}
+
+.modal-header .close-button:hover {
+  color: #800000;
+}
+
+.modal-header .title {
+  font-size: 1.7em;
+  text-align: center;
+  border-bottom: 2px solid #000;
+}
+
+.modal-body {
+  padding: 0.5em;
+}
+
+.modal-body img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-body .links-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal-body .links-info .website {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.modal-body .links-info .website h4 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.modal-body .links-info .see-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.modal-body .links-info .see-code h4 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.modal-body h5 {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.modal-body p {
+  font-size: 1.5em;
+}
+
+.fas, .fab {
+  color: #4d0000;
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+  z-index: 800;
+}
+
+.overlay.active {
+  opacity: 1;
+  overflow-y: hidden;
+  pointer-events: all;
+}
+
+.modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer {
@@ -353,7 +520,7 @@ html {
 }
 
 .footer p {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   text-align: center;
   font-weight: bold;

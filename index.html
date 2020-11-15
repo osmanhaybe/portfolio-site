@@ -75,49 +75,187 @@
       <div class="project-wrap">
         <div class="project-comp project-1">
           <div class="image">
-            <a href="https://launchgood-campaignclone.netlify.app" target="_blank"><img src="/images/image-lgcc.jpg" alt="Website 1 Image"></a>
+            <img src="/images/image-lgcc.jpg" alt="Website 1 Image">
           </div>
-          <a href="https://launchgood-campaignclone.netlify.app" target="_blank"><div class="description">
+          <div class="description" id="open-modal1">
             <h2>LaunchGood Clone </h2>
-            <p>HTML/CSS/JS</p>
-          </div></a>
+            <p>HTML/CSS/JS/Stripe API</p>
+          </div>
         </div>
       
 
         <div class="project-comp project-2">
           <div class="image">
-              <a href="https://nasa-imagesearch.netlify.app" target="_blank"><img src="/images/image-ns.jpg" alt="Website 2 Image"></a>
+              <img src="/images/image-ns.jpg" alt="Website 2 Image">
           </div>
 
-          <a href="https://nasa-imagesearch.netlify.app"><div class="description">
+          <div class="description" id="open-modal2">
             <h2>Nasa Image Search</h2>
-            <p>HTML/SCSS/JS</p>
-        </div></a>
+            <p>HTML/SCSS/JS/NASA REST API</p>
+        </div>
         </div>
 
         <div class="project-comp project-3">
           <div class="image">
-            <a href="https://mountain-ridge.netlify.app"><img src="/images/image-mr.jpg" alt="Website 3 Image"></a>
+            <img src="/images/image-mr.jpg" alt="Website 3 Image">
           </div>
           
-          <a href="https://mountain-ridge.netlify.app"><div class="description">
+          <div class="description" id="open-modal3">
             <h2>Mountain Ridge</h2>
             <p>HTML/SCSS/JS</p>
-          </div></a>
+          </div>
         </div>
 
         <div class="project-comp project-4">
           <div class="image">
-            <a href="https://home-solutions.netlify.app" target="_blank"><img src="/images/image-hs.jpg" alt="Website 4 Image"></a>
+            <img src="/images/image-hs.jpg" alt="Website 4 Image">
           </div>
-          <a href="https://home-solutions.netlify.app" target="_blank"><div class="description">
+          <div class="description" id="open-modal4">
             <h2>Home Solutions</h2>
             <p>HTML/CSS/JS</p>
-          </div></a>
+          </div>
         </div>
 
       </div>
     </div>
+
+    <!-- modal windows -->
+
+    <!-- Modal for Project 1 LaunchGood Campaign Clone Website -->
+    <div class="modal" id="modal1">
+      <div class="modal-header">
+        <div class="title">LaunchGood Campaign Clone Website</div>
+        <button id="close-modal1" class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="/images/image-lgcc.jpg" alt="Website 1 Image">
+        <div class="links-info">
+          <div class="website">
+            <h4>Live Website</h4>
+            <a href="https://launchgood-campaignclone.netlify.app" target=”_blank” class="href"><i class="fas fa-external-link-alt fa-2x"></i></a>
+          </div>
+          <div class="see-code">
+            <h4>See Code</h4>
+            <a href="https://github.com/osmanhaybe/launchgood-campaignclone" target=”_blank”><i class="fab fa-github fa-2x"></i></a>
+          </div>
+       </div>
+        <div class="project-description">
+          <p class="about">This project is a a live client side responsive clone webpage for a launchGood campaign that I spearheaded with 11 campus groups at the University of Toronto in 2016. The purpose of this campaign was to raise funds for the famine in East Africa, and we managed to raise $2,561. This webpage utilizes STRIPE API (only test mode has been enabled for this project).</p>
+            
+          <h5>Tech/framework used:</h5> 
+           <p>HTML, CSS, JavaScript, Stripe API</p> 
+            
+            <h5>Features:</h5> 
+            <p>Responsive, Payments handled by STRIPE PAYMENT API (test mode only enabled).</p> 
+            
+            <h5>Stripe TEST Payment Card:</h5> 
+            <p>4242424242424242 Visa Any 3 digits Any future date.</p>
+          
+          <p><b>More test payment cards are listed on my github README.</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay" id="overlay1"></div>
+
+    <!-- Modal for Project 2 NASA IMAGE SEARCH -->
+    <div class="modal" id="modal2">
+      <div class="modal-header">
+        <div class="title">NASA Image Search Website</div>
+        <button id="close-modal2" class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="/images/image-ns.jpg" alt="Website 2 Image">
+        <div class="links-info">
+          <div class="website">
+            <h4>Live Website</h4>
+            <a href="https://nasa-imagesearch.netlify.app" target=”_blank” class="href"><i class="fas fa-external-link-alt fa-2x"></i></a>
+          </div>
+          <div class="see-code">
+            <h4>See Code</h4>
+            <a href="https://github.com/osmanhaybe/NASA-imgSearch" target=”_blank”><i class="fab fa-github fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="project-description">
+          <p>This project is a a responsive live webpage that allows a user to search for a specific term and will output all related images from NASA's Image API along with the title for each image. All related images and their corresponding titles are displayed in containers and are arranged responsively using CSS GRID.</p>
+            
+          <h5>Tech/framework used:</h5> 
+          <p>HTML, CSS, JavaScript, NASA REST API</p>  
+            
+          <h5>Features:</h5> 
+            
+          <p>Allows a user to search images exclusive from NASA's open image API.</p> 
+        </div>
+      </div>
+    </div>
+    <div class="overlay" id="overlay2"></div>
+
+    <!-- Modal for Project 3 Mountain Ridge Website-->
+    <div class="modal" id="modal3">
+      <div class="modal-header">
+        <div class="title">Mountain Ridge Website</div>
+        <button id="close-modal3" class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="/images/image-mr.jpg" alt="Website 3 Image">
+        <div class="links-info">
+          <div class="website">
+            <h4>Live Website</h4>
+            <a href="https://mountain-ridge.netlify.app" target=”_blank” class="href"><i class="fas fa-external-link-alt fa-2x"></i></a>
+          </div>
+          <div class="see-code">
+            <h4>See Code</h4>
+            <a href=https://github.com/osmanhaybe/MountainRidge target=”_blank”><i class="fab fa-github fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="project-description">
+          <p>This project is a a live responsive concept for a vacation lodge website with a responsive, simple and clean look.</p>
+
+          <h5>Tech/framework used:</h5>  
+            
+          <p>HTML, CSS, JavaScript, Google Maps API</p> 
+            
+          <h5>Features</h5>
+            
+          <p>Simple responsive one page site with a form to allow interested prospective customers to request more information. The varying services are displayed on the site with an embedded google maps image from the google maps API to allow customers to explore the area of the conceptual lodge.</p> 
+        </div>
+      </div>
+    </div>
+    <div class="overlay" id="overlay3"></div>
+
+    <!-- Modal for Project 4 Total Home Solutions Website -->
+    <div class="modal" id="modal4">
+      <div class="modal-header">
+        <div class="title">Home Solutions Website</div>
+        <button id="close-modal4" class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="/images/image-hs.jpg" alt="Website 4 Image">
+        <div class="links-info">
+          <div class="website">
+            <h4>Live Website</h4>
+            <a href="https://home-solutions.netlify.app"  target=”_blank” class="href"><i class="fas fa-external-link-alt fa-2x"></i></a>
+          </div>
+          <div class="see-code">
+            <h4>See Code</h4>
+            <a href="https://github.com/osmanhaybe/Home-Solutions-Site" target=”_blank”><i class="fab fa-github fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="project-description">
+          <p>This project is a a live responsive concept for a contractor business website with a sleek look, and a free estimate form to generate leads.</p>
+
+          <h5> Tech/framework used:</h5>
+            
+          <p>HTML, CSS, JavaScript</p>  
+            
+          <h5>Features</h5>  
+            
+          <p>Image slider gallery coded with vanilla JS, a free estimate lead form for customers to fill out for job estimates, a dashboard to view previous, pending, and all jobs and to display all or selective job types using DOM manipulation. The website also includes the services that this business specializes in, and a section to view the team to build a sense of familiarity in order to facilitate leads in the free estimate form below this section.</p>  
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay" id="overlay4"></div>
+
     <!-- footer -->
     <div class="footer">
       <p>Copyright &copy; 2020 - Osman Haybe</p>
