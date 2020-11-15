@@ -363,7 +363,6 @@ html {
   max-height: 100vh;
   font-family: 'Roboto' sans-serif;
   overflow-y: auto;
-  margin-top: 3em;
 }
 
 .modal.active {
@@ -633,6 +632,12 @@ html {
     margin: -1em 1em 1em 0;
     text-align: right;
     color: #fff;
+  }
+}
+
+@media (max-width: 650px) {
+  .modal {
+    margin-top: 5em;
   }
 }
 

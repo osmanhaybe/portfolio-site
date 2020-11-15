@@ -299,7 +299,6 @@ html {
   max-height: 100vh;
   font-family: 'Roboto' sans-serif;
   overflow-y: auto;
-  margin-top: 3em;
 
 }
 
@@ -548,6 +547,13 @@ html {
     color: #fff;
   }
  
+}
+
+@media (max-width: 650px) {
+  .modal {
+    margin-top: 5em;
+  }
+  
 }
 
 @media(max-height: 775px){
